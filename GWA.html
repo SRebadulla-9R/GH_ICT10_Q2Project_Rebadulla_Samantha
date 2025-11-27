@@ -5,19 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lockewood University - GWA Calculator</title>
 
-<!-- Website Icon -->
 <link rel="icon" type="image/png" href="giraffe.png">
-
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Schoolbell&display=swap" rel="stylesheet">
-
-<!-- PyScript -->
 <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
@@ -43,14 +34,13 @@
         <a class="navbar-brand d-flex align-items-center" href="index.html">
             <img src="giraffe.png" alt="Logo"> Lockewood University
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="GWA.html">GWA Calculator</a></li>
+                <li class="nav-item"><a class="nav-link active" href="GWA.html">GWA Calculator</a></li>
                 <li class="nav-item"><a class="nav-link" href="clubs.html">School Clubs</a></li>
             </ul>
             <i class="bi bi-person-circle role-icon"></i>
@@ -61,30 +51,14 @@
 <!-- GWA Calculator Form -->
 <div class="container-box">
     <h2>GWA Calculator</h2>
-
-    <label>First Name:</label>
-    <input type="text" id="first_name" class="form-control mb-2">
-
-    <label>Last Name:</label>
-    <input type="text" id="last_name" class="form-control mb-3">
-
-    <label>Math:</label>
-    <input type="number" id="Math" class="form-control mb-2">
-
-    <label>Science:</label>
-    <input type="number" id="Science" class="form-control mb-2">
-
-    <label>English:</label>
-    <input type="number" id="English" class="form-control mb-2">
-
-    <label>History:</label>
-    <input type="number" id="History" class="form-control mb-2">
-
-    <label>PE:</label>
-    <input type="number" id="PE" class="form-control mb-3">
-
+    <label>First Name:</label><input type="text" id="first_name" class="form-control mb-2">
+    <label>Last Name:</label><input type="text" id="last_name" class="form-control mb-3">
+    <label>Math:</label><input type="number" id="Math" class="form-control mb-2">
+    <label>Science:</label><input type="number" id="Science" class="form-control mb-2">
+    <label>English:</label><input type="number" id="English" class="form-control mb-2">
+    <label>History:</label><input type="number" id="History" class="form-control mb-2">
+    <label>PE:</label><input type="number" id="PE" class="form-control mb-3">
     <button class="btn btn-primary w-100" py-click="calculate_gwa()">Calculate GWA</button>
-
     <div id="result" class="mt-4"></div>
 </div>
 
@@ -92,17 +66,7 @@
     <p>© Samantha Erin Rebadulla | 10R | ICT Project</p>
 </footer>
 
-<!-- PyScript -->
 <py-script src="GWA.py"></py-script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.getElementById("calculate").addEventListener("click", calculate_gwa)
-</script>
-
 </body>
 </html>
-
-
-
-
